@@ -34,14 +34,14 @@
              <li>
                 <h3><span class="icon-calendar"></span>Documentos (No operativo)</h3>
                 <ul>
-                    <li><a href="#"></a>Contadores</a></li>
+                    <li><a href="#">Contadores</a></li>
                     <li><a href="#">Archivos Escaneados</a></li>
-                    <li><a href="#">Archivos en Excel</a></li>
+                    <li><a href="#">Documentos en Excel</a></li>
                   
                 </ul>
             </li> 
-            <li>
-                <h3><span class="icon-heart"></span><a href="index.html">Salir</a></h3>
+            <li id="salir">
+                <h3><span class="icon-heart"></span><a id="exit" href="index.html">Salir</a></h3>
                 <!-- <ul>
                     <li><a href="#">Global favs</a></li>
                     <li><a href="#">My favs</a></li>
@@ -60,7 +60,7 @@
     <script>
         /*jQuery time*/
 $(document).ready(function(){
-	$("#accordian h3").onclick(function(){
+	$("#accordian h3").click(function(){
 		//slide up all the link lists
 		$("#accordian ul ul").slideUp();
 		//slide down the link list below the h3 clicked - only if its closed
