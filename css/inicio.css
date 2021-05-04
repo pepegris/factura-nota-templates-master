@@ -76,3 +76,9 @@ body {
 ·accordian li.active ul{
     display: block;
 }
+@media (max-width: 900px){
+    #accordian{
+		width: 100%;
+	}
+    
+}	
