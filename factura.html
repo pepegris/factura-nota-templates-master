@@ -8,12 +8,25 @@
   			body, h1, h2, h3, h4, h5, h6{
     			font-family: 'Bree Serif', serif;
  	 									}
+	@media (max-width: 900px){
+    #panel input{
+        width: 105px;
+        height: 30px;
+    }
+	#factura input{
+        width: 150px;
+        height: 30px;
+    }
+	
+    
+}				  
+			
   	</style>
 		<div class="container">
 			<div class="row">
             
 		<div class="col-xs-6">
-			<h1><a href=" "><img alt="" src="image/logo3.png" /> Empresa</a></h1>
+			<h1><a href=" "><img id="imagen" alt=""  src="image/logo3.png" /> Empresa</a></h1>
 		</div>
 		<div class="col-xs-6 text-right">
 							<div class="panel panel-default">
@@ -24,7 +37,7 @@
 									<h4>Empresa
 									</h4>
 							</div>
-							<div class="panel-body">
+							<div class="panel-body" id="factura">
 								<h4>FACTURA : 
 									<input type="text" name="" placeholder="Numero de Factura" id="">
 								</h4>
@@ -45,13 +58,13 @@
 									
 									</h4>
 								</div>
-						<div class="panel-body">
+						<div class="panel-body" id="panel" >
 						
 							
 								<h4>Comprador :  
-									<input type="text" name="" placeholder="Nombre" id="">
+									<input  type="text" name="" placeholder="Nombre y Apellido" id="">
 									CI/RIF :
-									<input type="text" name="" placeholder="" id="">
+									<input  type="text" name="" placeholder="" id="">
 								</h4>
 					
 						</div>
